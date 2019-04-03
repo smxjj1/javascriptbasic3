@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        //数组的常用方法，如何根据webstorm看参数提示
+        console.log(arr.valueOf());//[1, 2, 3, 4, 5]
+//        console.log(arr.toString());//1,2,3,4,5
+//        //join：以某一个字符，拼接数组的每一个元素
+        console.log(arr.join());//1,2,3,4,5
+
+
+//        console.log(arr.push(0));//从后面添加元素 返回新数组的长度
+//        console.log(arr.pop());//从后面删除元素 返回被删除的元素
+//        console.log(arr.shift());//从前面删除元素 返回被删除的元素
+//        console.log(arr.unshift(0));//从前面添加元素 返回新数组的长度
+
+        console.log(arr.push(0, "abc", true));
+        console.log(arr);
+
+//        var newArr = arr.filter(function (element, index, array) {
+//            //console.log(element);//当前迭代的元素
+//            //console.log(index);//当前迭代索引
+//            //console.log(array);//当前数组
+//            if (element > 2000) {
+//                return false;//删除该元素
+//            }
+//            return true;//保留该元素
+//        });
+
+
+            var arr = ["c", "a", 1, "a", false, "a"];
+            console.log(arr.indexOf("a"));//1
+
+
+            console.log(arr.indexOf(1));//2
+            console.log(arr.indexOf(false));//4
+
+
+        //从数组中截取一个新的数组,返回新的数组
+        //    1开始 2结束 [start,end) 开始能取到 结束取不到
+//        console.log(arr.slice(0, 2));//slice 不会改变原数组
+//
+//        //删除和替换数组中的一部分
+//        //1开始 2个数 3要加入的元素
+//        console.log(arr.splice(0, 2));//会对原数组进行修改（删除）
+//        //splice可以添加元素 (替换)
+//        console.log(arr.splice(0, 2, "a"));
+//
+//
+//        var arr = [4, 6, 7, 8, 3, 46, 8];
+//        for (var i = 0; i < arr.length; i++) {
+//            console.log(arr[i]);
+//        }
+//        //1.当前元素；2.当前索引；3.当前数组
+//        arr.forEach(function (element, index, array) {
+//            console.log(element);
+//            console.log(index);
+//            console.log(array);
+//        });
+
+        console.log(typeof null);//object
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

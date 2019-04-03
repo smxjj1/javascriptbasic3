@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        //将一个字符串数组输出为用|分割的字符串，如 ["刘备", "张飞", "关羽"] 变为 "刘备|张飞|关羽"。（两种方式）
+        var arr = ["刘备", "张飞", "关羽"];
+
+        function join(arr, sep) {
+            var str = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                str = str + sep + arr[i];
+            }
+            return str;
+        }
+
+        function jion(arr, sep) {
+            var str = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                str = str + spe + arr[i];
+            }
+            return str;
+        }
+        console.log(join(arr, "|"));
+        console.log(arr.join("|"));
+        console.log(arr.join("\""));
+        console.log(arr.join("\\"));
+    </script>
+</body>
+
+</html>
